@@ -6,22 +6,22 @@ namespace CommunalServices.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    public class AuthentificationController(IAbonentAuthenticationService _abonentAuthService) : ControllerBase
+    public class AuthentificationController(AbonentAuthenticationService _abonentAuthService) : ControllerBase
     {
         [HttpGet("Login")]
-        public async Task<IActionResult> LoginAsync(string login, string password)
+        public async Task<ActionResult> LoginAsync(string login, string password)
         {
             var abonent = await _abonentAuthService.LoginAsync(login, password);
             return abonent == null ? NotFound() : Ok(abonent);
         }
         [HttpPost("Register")]
-        public async Task<IActionResult> RegisterAsync(AbonentDTO newAbonent)
+        public async Task<ActionResult> RegisterAsync(AbonentReg newAbonent)
         {
             var registeredAbonent = await _abonentAuthService.RegisterAsync(newAbonent);
             return registeredAbonent == null ? BadRequest() : Ok(registeredAbonent);
         }
         [HttpPut("ChangePassword")]
-        public async Task<IActionResult> ChangePassword(AbonentDTO updatedAbonent)
+        public async Task<ActionResult> ChangePassword(AbonentReg updatedAbonent)
         {
             var abonent = await _abonentAuthService.ChangePasswordAsync(updatedAbonent);
             return abonent == null ? NotFound() : Ok(abonent);
