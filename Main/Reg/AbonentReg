@@ -1,6 +1,6 @@
-﻿using CommunalServices.Main.Entities;
+﻿using Kursovaya-rabota.Main.Entities;
 
-namespace CommunalServices.Main.Reg
+namespace Kursovaya-rabota.Main.Reg
 {
     public class AbonentReg
     {
