@@ -1,5 +1,5 @@
-﻿using CommunalServices.Domain.Contracts;
-using CommunalServices.Domain.DTO;
+﻿using Kursovaya-rabota.Main.Services;
+using Kursovaya-rabota.Main.Reg;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CommunalServices.Controllers
