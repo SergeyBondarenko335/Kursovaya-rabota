@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace CommunalServices.Domain.Entities
+namespace Kursovaya-rabota.Main.Entities
 {
     public class PaymentAccount
     {
