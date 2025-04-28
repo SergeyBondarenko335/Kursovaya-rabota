@@ -1,12 +1,12 @@
-﻿using CommunalServices.Domain.Entities;
-using CommunalServices.Domain.DTO;
+﻿using Kursovaya-rabota.Main.Entities;
+using Kursovaya-rabota.Main.Reg;
 
-namespace CommunalServices.Domain.Contracts
+namespace Kursovaya-rabota.Main.Services
 {
-    public interface IAbonentAuthenticationService
+    public interface AbonentAuthenticationService
     {
-        public Task<Abonent> RegisterAsync(AbonentDTO newAbonentDto);
+        public Task<Abonent> RegisterAsync(AbonentReg newAbonentReg);
         public Task<Abonent> LoginAsync(string login, string password);
-        public Task<Abonent> ChangePasswordAsync(AbonentDTO updatedAbonent);
+        public Task<Abonent> ChangePasswordAsync(AbonentReg updatedAbonent);
     }
 }
