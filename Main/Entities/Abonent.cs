@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 
-namespace CommunalServices.Domain.Entities
+namespace Kursovaya-rabota.Main.Entities
 {
 	public class Abonent
 	{
