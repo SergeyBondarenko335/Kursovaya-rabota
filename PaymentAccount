@@ -1,0 +1,11 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace CommunalServices.Domain.Entities
+{
+    public class PaymentAccount
+    {
+        [Key]
+        public int PaymentId { get; set; }
+        public int DebtId { get; set; }
+    }
+}
