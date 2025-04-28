@@ -21,7 +21,7 @@ namespace OnlineStore
 
 			builder.Services.AddTransient<IRepository, Repository>();
 			builder.Services.AddTransient<IBankPaymentService, MockBankPaymentService>();
-	    builder.Services.AddTransient<GoodsSelectoinService>();
+	    		builder.Services.AddTransient<GoodsSelectoinService>();
 			builder.Services.AddTransient<IAbonentAuthenticationService, AbonentAuthenticationService>();
 			builder.Services.AddTransient<IDebtPaymentService, DebtPaymentService>();
 			builder.Services.AddTransient<IEmailNoticeService, EmailNoticeService>();
