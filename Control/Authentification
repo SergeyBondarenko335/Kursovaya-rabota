@@ -2,7 +2,7 @@
 using Kursovaya-rabota.Main.Reg;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CommunalServices.Controllers
+namespace Kursovaya-rabota.Controllers
 {
     [Route("[controller]")]
     [ApiController]
